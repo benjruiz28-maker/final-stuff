@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick-Bite | Event Discovery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/eventsdiscovery.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Quick-Bites</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cafeMenu" aria-controls="cafeMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="cafeMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="EventDiscovery.html">Event Discovery</a></li>
+          <li class="nav-item"><a class="nav-link" href="registration.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="page-header">
+    <div class="container">
+      <p class="eyebrow">Browse &amp; Discover</p>
+      <h1 class="page-title">Find Your Next<br><span class="glow">Quick-Bite</span> Event</h1>
+      <p class="subtitle">Cooking workshops, tasting nights, competitions — grab your spot before it sells out.</p>
+    </div>
+  </header>
+
+  <main class="container pb-5">
+
+    <div class="text-center mb-4">
+      <p class="subtitle">All current Quick-Bite events are listed below.</p>
+    </div>
+
+    <div id="events-grid" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5"></div>
+
+  </main>
+
+  <footer id="site-footer">
+    <div class="container text-center py-4">
+      <span class="brand">Quick-Bite</span>
+      <p class="mb-0 text-muted">Your next flavor adventure starts here.</p>
+    </div>
+  </footer>
+
+  <div id="event-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop-custom" id="modal-backdrop"></div>
+    <div class="modal-panel">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <img id="modal-img" class="modal-img" src="" alt="" />
+      <p id="modal-cat"></p>
+      <h2 id="modal-title"></h2>
+      <div id="modal-meta"></div>
+      <p id="modal-desc"></p>
+      <a href="registration.html" class="modal-cta">Reserve My Spot &rarr;</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/eventsDiscovery.js"></script>
+</body>
+</html>

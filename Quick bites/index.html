@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick-Bite Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            height: 195px;
+            object-fit: cover;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8f9fa;
+            color: #0f172a;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+        }
+
+        .card {
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(13, 110, 253, 0.14);
+        }
+
+        .card-body {
+            padding: 2.5rem;
+        }
+
+        .card-title {
+            font-size: 1.05rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        .card-text {
+            color: #64748b;
+            line-height: 2.1;
+            margin-bottom: 1.6rem;
+            font-size: 0.92rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Quick-Bites</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cafeMenu" aria-controls="cafeMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="cafeMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="EventDiscovery.html">Event Discovery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="position-relative text-white text-center">
+
+        <!-- Banner Image -->
+        <img src="https://i.pinimg.com/1200x/fb/6b/4f/fb6b4f6c1b6c68a599b15e93700bb290.jpg" class="img-fluid w-100"
+            style="height: 300px; object-fit: cover;">
+
+        <!-- Text on top of image -->
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <h1 class="display-4">Welcome to Quick-Bite Events</h1>
+            <p class="lead">Easily find and register for exciting events near you.</p>
+            <a href="EventDiscovery.html" class="btn btn-primary btn-lg">Browse Events</a>
+        </div>
+
+    </section>
+
+    <!-- FEATURED EVENTS -->
+    <section id="featured-events" class="container my-5">
+        <h2 class="text-center mb-4">Featured Events</h2>
+
+        <div class="row">
+
+            <!-- Event Card 1 -->
+            <div class="col-md-4 d-flex">
+                <div class="card w-100">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Street Taco Throwdown</h5>
+                        <p class="card-text">Date & Time: Sat, 12 July 2025, 11:00 AM – 4:00 PM</p>
+                        <p class="card-text">Venue: Harbour Plaza, Belmopan</p>
+                        <p class="card-text">Teams of two battle it out to craft the most creative street taco. Three rounds, blind judging by local celebrity chefs. All ingredients provided. Spectators welcome.</p>
+                        <a href="registration.html" class="btn btn-primary">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="col-md-4 d-flex">
+                <div class="card w-100">
+                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=80"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Caribbean Spice Workshop</h5>
+                        <p class="card-text">Date & Time: Sun, 20 July 2025, 10:00 AM – 1:00 PM</p>
+                        <p class="card-text">Venue: Quick-Bite Studio, Belize City</p>
+                        <p class="card-text">Dive into Caribbean spice blending with Chef Miriam Castillo. You'll leave with three hand-blended spice jars and a recipe booklet. All skill levels welcome.</p>
+                        <a href="registration.html" class="btn btn-primary">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="col-md-4 d-flex">
+                <div class="card w-100">
+                    <img src="https://images.unsplash.com/photo-1548907040-4baa42d10919?w=600&q=80"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Rum & Chocolate Pairing</h5>
+                        <p class="card-text">Date & Time: Fri, 25 July 2025, 7:00 PM – 9:30 PM</p>
+                        <p class="card-text">Venue: The Caye Lounge, San Pedro</p>
+                        <p class="card-text">Six pairings of single-origin Belizean cacao chocolates with artisanal Caribbean rums, guided by our sommelier. Charcuterie board included. Strictly 18+.</p>
+                        <a href="registration.html" class="btn btn-primary">Register</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
